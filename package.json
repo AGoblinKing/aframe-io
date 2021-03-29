@@ -5,7 +5,7 @@
 	"license": "Apache-2.0",
 	"description": "Deploy and build games to Steam / Itch using Electron and Greenworks with GitHub Actions",
 	"greenhub": {
-		"live": "https://aframe.io,
+		"live": "https://aframe.io",
 		"dev": "https://aframe.io"
 	},
 	"scripts": {
@@ -42,7 +42,7 @@
 			"cordova-plugin-whitelist": {}
 		}
 	},
-	"main": "./electron/main.js",
+	"main": "./electron/greenhub.js",
 	"devDependencies": {
 		"cordova": "^10.0.0",
 		"cordova-android": "^9.0.0",
