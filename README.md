@@ -7,7 +7,7 @@ Use GitHub as a Continuous Deployment Engine to Game Platforms using Electron an
 - [x] Setup Template Repo
 - [x] Setup GitHub Actions to build Electron binaries
   - store as a release
-- [ ] Setup Deployment Actions
+- [x] Setup Deployment Actions
   - Itch
 - [ ] Ensure overlay works
 - [ ] Documentation/Examples
@@ -32,8 +32,20 @@ A developer commits a bunch of client files to the repo which triggers GitHub Ac
     - [ ] ???
     - [ ] Download the releases
 
-# Space Magic Integration to Itch.io and Steam
+# Space Magic Integration to Itch.io
 
-    - [ ] Add `SECRETS` to your repository
+    - [ ] Add `SECRETS` to your github repository
+
+```yaml
+- name: Deploy to itch
+  uses: josephbmanley/butler-publish-itchio-action@master
+  env:
+    BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+    CHANNEL: browser
+    ITCH_GAME: ${{ secrets.ITCH_GAME }}
+    ITCH_USER: ${{ secrets.ITCH_USER }}
+    PACKAGE: www
+```
+
     - [ ] ???
     - [ ] Its released!
