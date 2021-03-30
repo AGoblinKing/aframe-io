@@ -5,8 +5,8 @@
 	"license": "Apache-2.0",
 	"description": "Deploy and build games to Steam / Itch using Electron and Greenworks with GitHub Actions",
 	"greenhub": {
-		"live": "https://aframe.io",
-		"dev": "https://aframe.io"
+		"live": "app://index.html?live",
+		"dev": "app://index.html?dev"
 	},
 	"scripts": {
 		"dev": "electron . --dev",
